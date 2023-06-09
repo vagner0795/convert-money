@@ -2,7 +2,7 @@
 
 
 
-<img src="./img/result/home.png" alt="logo-portifolio">
+<img src="./img/result/home.png" alt="image conversor">
 
 
 
@@ -10,14 +10,20 @@
 
 > Resultado do Conversor de Moedas.
 
-### Ajustes e melhorias
+### Sobre
 
-O projeto trata-se de um mini site com pagina inicial, sobre, projetos e contatos. o projeto ja está no ar e foram usados:
+O projeto trata-se de um Conversor de Moedas. O objetivo é converter valores monetários entre diferentes moedas. Ex: Real - Dólar, Real - Euro, Euro - Dólar. Além de consumir uma API que disponibiliza os valores de cambio atualizados.
 
 - [x] Criação do HTML
 - [x] Criação do CSS
 - [x] Criação do JAVASCRIPT
+- [x] Consumo de API
 - [x] Responsividade
+
+## Ver o Projeto: 
+
+<a herf="http://www.google.com"
+  style="padding: 10px 25px; border-radius: 10px; border: none; color: #ffffff; background: #0097ff;">Entrar</a>
 
 
 ## 🤝 Colaboradores

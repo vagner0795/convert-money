@@ -1,30 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 
-:root{
+:root {
     --color-primary: #1a2e37;
     --color-secundary: #59e5a8;
-    --color-third: #57d89f;
-    --color-fourth:#4ec38f;
-    --color-fifth:#d5f7e6;
-    --color-white:#ffffff;
-    --color-black:#000000;
+    --color-third: #d5f7e6;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #555555;
 
 }
-body{
-    background-color: var(--color-fifth);
+
+body {
+    background-color: var(--color-third);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
 
-h1{
-    color: var();
-}
-
-img{
+.logo {
     width: 300px;
+    margin-top: 20px;
+}
+
+.container {
+    width: 350px;
+    background-color: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px 20px 23px;
+    margin-bottom: 40px;
+}
+
+p {
+    color: var(--color-white);
+}
+
+label {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+select,
+input {
+    background: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    appearance: none;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray);
+    cursor: pointer;
+}
+
+select option{
+    background: var(--color-secundary);
+    color: var(--color-white);
+}
+
+.container-values {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.arrow {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.currency {
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.currency-value {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.coin {
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+button {
+    width: 100%;
+    display: block;
+    margin: 0px auto 20px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-white);
+    color: var(--color-secundary);
+    transition: all 0.4s ease-in-out;
+}
+
+button:active {
+    color: var(--color-white);
+    background: var(--color-primary);
+    transition: none;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 200px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    select,
+    input {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    button {
+        height: 35px;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .coin {
+        width: 40px;
+    }
+
+    .currency-value{
+        font-size: 16px;
+    }
+
 }
