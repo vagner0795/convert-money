@@ -1,8 +1,8 @@
-# Conversor
+# Conversor de Moedas
 
 
 
-<img src="./img/result/home.png" alt="image conversor">
+<img src="./assets/result.png" alt="image conversor">
 
 
 
@@ -22,8 +22,8 @@ O projeto trata-se de um Conversor de Moedas. O objetivo é converter valores mo
 
 ## Ver o Projeto: 
 
-[Abrir Projeto 🚀](https://vagner0795.github.io/convert-money/)
-
+<a 
+href="https://vagner0795.github.io/convert-money/" target="_blank">Abrir Projeto✅</a>
 
 ## 🤝 Colaboradores
 
