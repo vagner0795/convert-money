@@ -22,8 +22,7 @@ O projeto trata-se de um Conversor de Moedas. O objetivo é converter valores mo
 
 ## Ver o Projeto: 
 
-<a herf="http://www.google.com"
-  style="padding: 10px 25px; border-radius: 10px; border: none; color: #ffffff; background: #0097ff;">Entrar</a>
+[Abrir Projeto 🚀](https://vagner0795.github.io/convert-money/)
 
 
 ## 🤝 Colaboradores
