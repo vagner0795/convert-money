@@ -89,6 +89,7 @@ select option{
 
 .arrow {
     margin: 15px 0;
+    height: 60px;
 }
 
 .currency-box {
@@ -102,7 +103,7 @@ select option{
     font-size: 14px;
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     font-weight: 700;
     font-size: 20px;
 }
@@ -157,7 +158,6 @@ button:active {
 
     button {
         height: 35px;
-        width: 80%;
         font-size: 16px;
     }
 
@@ -165,7 +165,7 @@ button:active {
         width: 40px;
     }
 
-    .currency-value{
+    .currency-value, .currency-value-to-convert{
         font-size: 16px;
     }
 
