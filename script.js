@@ -9,25 +9,56 @@ const currencyImage = document.querySelector('.currency-img') //! image coin
 //? Intl.NumberFormat - Javascript Library to format values
 
 // format values function
-function convertValues() {
+const convertValues = async () => {
+
     const inputCurrencyValue = input.value
 
-    const dolarToday = 4.8
-    const euroToday = 6.3
+    const data = await fetch('http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL,JPY-BRL').then(response => response.json())
+
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const libra = data.GBPBRL.high
+    const iene = data.JPYBRL.high
+
 
 
     if (currencySelect.value == 'dolar') {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
-        }).format(inputCurrencyValue / dolarToday)
+        }).format(inputCurrencyValue / dolar)
     }
 
     if (currencySelect.value == 'euro') {
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "EUR"
-        }).format(inputCurrencyValue / euroToday)
+        }).format(inputCurrencyValue / euro)
+
+    }
+
+    if (currencySelect.value == 'libra') {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputCurrencyValue / libra)
+
+    }
+
+    if (currencySelect.value == 'iene') {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
+            style: "currency",
+            currency: "JPY"
+        }).format(inputCurrencyValue / iene)
+
+    }
+
+    if (currencySelect.value == 'real') {
+        currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputCurrencyValue * realToday)
 
     }
 
@@ -35,6 +66,8 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
+
+
 
 }
 
@@ -46,10 +79,27 @@ function changeCurrency() {
         currencyImage.src = './assets/dolar.png'
     }
 
-    if(currencySelect.value == 'euro'){
+    if (currencySelect.value == 'euro') {
 
         currencyName.innerHTML = 'Euro'
         currencyImage.src = './assets/euro.png'
+    }
+
+    if (currencySelect.value == 'libra') {
+
+        currencyName.innerHTML = 'Libra esterlina'
+        currencyImage.src = './assets/libra.png'
+    }
+    if (currencySelect.value == 'iene') {
+
+        currencyName.innerHTML = 'Iene Japones'
+        currencyImage.src = './assets/iene.png'
+    }
+
+    if (currencySelect.value == 'real') {
+
+        currencyName.innerHTML = 'Real Brasileiro'
+        currencyImage.src = './assets/real.png'
     }
 
 

@@ -22,8 +22,7 @@ O projeto trata-se de um Conversor de Moedas. O objetivo é converter valores mo
 
 ## Ver o Projeto: 
 
-<a 
-href="https://vagner0795.github.io/convert-money/" target="_blank">Abrir Projeto✅</a>
+<a href="https://vagner0795.github.io/convert-money/" target="_blank">Abrir Projeto✅</a>
 
 ## 🤝 Colaboradores
 
