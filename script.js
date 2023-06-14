@@ -57,13 +57,7 @@ const convertValues = async () => {
 
     }
 
-    if (currencySelect.value == 'real') {
-        currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        }).format(inputCurrencyValue * realToday)
-
-    }
+    
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
@@ -98,15 +92,6 @@ function changeCurrency() {
         currencyName.innerHTML = 'Iene Japones'
         currencyImage.src = './assets/iene.png'
     }
-
-    if (currencySelect.value == 'real') {
-
-        currencyName.innerHTML = 'Real Brasileiro'
-        currencyImage.src = './assets/real.png'
-    }
-
-
-
     convertValues()
 }
 
