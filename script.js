@@ -1,3 +1,4 @@
+
 const input = document.querySelector('.input-currency') //! input
 const convertButton = document.querySelector('.convert-button') //! button
 const currencyValueToConvert = document.querySelector('.currency-value-to-convert') //! value to convert
@@ -6,14 +7,16 @@ const currencySelect = document.querySelector('.currency-select') //! select coi
 const currencyName = document.querySelector('#currency-name') //! paragraph coin name
 const currencyImage = document.querySelector('.currency-img') //! image coin
 
+
 //? Intl.NumberFormat - Javascript Library to format values
 
 // format values function
 const convertValues = async () => {
 
     const inputCurrencyValue = input.value
+    
+    const data = await fetch('https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL,JPY-BRL').then(response => response.json())
 
-    const data = await fetch('http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL,JPY-BRL').then(response => response.json())
 
 
     const dolar = data.USDBRL.high
